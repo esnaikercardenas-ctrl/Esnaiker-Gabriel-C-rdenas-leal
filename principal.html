@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-g">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Viaje</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="form-container">
+        <form id="registro-form" novalidate>
+            <h2>🚌 Registro de Pasajeros</h2>
+            
+            <div id="error-messages"></div>
+
+            <div class="form-group">
+                <label for="nombre">Nombre Completo</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cedula">Cédula o ID</label>
+                <input type="text" id="cedula" name="cedula" required>
+            </div>
+
+            <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Ej: 04141234567" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" placeholder="usuario@dominio.com" required>
+            </div>
+
+            <div class="form-group-row">
+                <div class="form-group">
+                    <label for="origen">Origen</label>
+                    <select id="origen" name="origen" required>
+                        <option value="">Seleccione...</option>
+                        <option value="Caracas">Caracas</option>
+                        <option value="Valencia">Valencia</option>
+                        <option value="Maracay">Maracay</option>
+                        <option value="Barquisimeto">Barquisimeto</option>
+                        <option value="San Cristóbal">San Cristóbal</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="destino">Destino</label>
+                    <select id="destino" name="destino" required>
+                        <option value="">Seleccione...</option>
+                        <option value="Caracas">Caracas</option>
+                        <option value="Valencia">Valencia</option>
+                        <option value="Maracay">Maracay</option>
+                        <option value="Barquisimeto">Barquisimeto</option>
+                        <option value="San Cristóbal">San Cristóbal</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="fecha">Fecha de Viaje</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </div>
+
+            <button type="submit" class="submit-btn">Registrar Boleto</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
