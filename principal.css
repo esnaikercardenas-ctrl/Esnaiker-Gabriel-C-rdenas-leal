@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #f0f4f8, #c9d6ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.form-container {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    padding: 30px 40px;
+    overflow: hidden;
+}
+
+h2 {
+    text-align: center;
+    color: #334e68;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #5a7184;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #cddcec;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #334e68;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15);
+}
+
+.form-group-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-group-row .form-group {
+    flex: 1;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+#error-messages {
+    background: #ffebee;
+    border: 1px solid #f44336;
+    border-radius: 8px;
+    color: #c62828;
+    padding: 15px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+#error-messages ul {
+    padding-left: 20px;
+}
+
+#error-messages li {
+    margin-bottom: 5px;
+}
